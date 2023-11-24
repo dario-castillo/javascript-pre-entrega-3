@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="images/lapiz.png" type="image/png">
+    <title>Dibujos a pedido</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <script defer src="js/index.js"></script>
+</head>
+<body>
+    <h1>Darío Castillo / Dibujante freelance</h1>
+    <h2>¡Formulario de pedidos!</h2>
+    <h3>Desde aquí puedes contactarme para ordenar un dibujo</h3>
+
+    <main>
+        <input type="text" id="nombre" class="input-nombre-usuario" placeholder="¿Cómo te llamas?">
+        <input type="number" id="edad" placeholder="¿Qué edad tienes?">
+        <label for="dibujo">¿Qué tipo de dibujo te gustaría?</label>
+        <select id="tipoDibujo">
+            <option selected disabled>Estilo...</option>
+        </select>
+        <input type="email" id="email" placeholder="¿Tu email?">
+        <button type="submit" id="botonEnviar">ENVIAR PEDIDO DE DIBUJO</button>
+    </main>
+    <br>
+    <br>
+    <div>
+        <p class="importe">Dibujo pedido:
+            <span id="dibujoPedido"></span>
+        </p>
+    </div>
+</body>
+</html>
